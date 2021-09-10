@@ -3,7 +3,7 @@ import path from 'path';
 
 class VideoService {
   findVideo(name: string) {
-    const video = fs.readFileSync(path.resolve('tmp', name));
+    const video = fs.createReadStream(path.resolve('tmp', name));
     return video;
   }
 }
