@@ -15,6 +15,7 @@ routes.get('/video/:id', async (req, res) => {
 });
 routes.get('/stream/:id', async (req, res) => {
   const stream = videoService.findVideo(req.params.id);
+  res.writeHead(206, {});
   stream.on('open', () => stream.pipe(res));
 });
 
