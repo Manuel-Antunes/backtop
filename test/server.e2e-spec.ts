@@ -1,6 +1,6 @@
 // eslint-disable-next-line import/no-extraneous-dependencies
 import request from 'supertest';
-import app from '../src/common/infra/app';
+import app from '../src/common/infra/http/app';
 
 describe('Server', () => {
   it('should return hello world when access / route', async () => {
