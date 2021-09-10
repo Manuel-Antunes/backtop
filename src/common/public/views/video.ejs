@@ -20,6 +20,22 @@
             height: 100%;
             object-fit: cover;
         }
+
+        #start {
+            width: 200px;
+            padding: 20px;
+            background-color: #7159c1;
+            color: #fff;
+            border: none;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+
+        #start:hover {
+            cursor: pointer;
+            background-color: #4d3d80;
+            color: #fff;
+        }
     </style>
 </head>
 
@@ -32,8 +48,11 @@
         <div id="video-container">
             <video></video>
         </div>
+        <button onclick="watchVideo()" id="start">
+          Iniciar video
+        </button>
     </center>
-    <script src="/js/index.js"></script>
+    <script src="/js/index.js" defer></script>
 </body>
 
 </html>
